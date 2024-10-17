@@ -105,6 +105,9 @@ header .conHead .headRight .iconBox .spTwo {
   top: -15px;
   right: 15px;
 }
+header .conHead i {
+  display: none;
+}
 
 main {
   height: 100vh;
@@ -114,7 +117,63 @@ main .secOne {
   width: 100%;
 }
 main .secOne div .row .firstPfirst {
-  background: url(https://preview.colorlib.com/theme/ashion/img/categories/category-1.jpg);
+  height: 80%;
+  width: 50%;
+}
+main .secTwo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   height: 100%;
+}
+main .secTwo .conTwo {
+  display: flex;
+  justify-content: space-between;
+}
+main .secTwo .conTwo h3 {
+  color: black;
+}
+main .secTwo .conTwo div {
+  color: black;
+}
+main .secTwo .conTwo div ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+main .secTwo .conTwo div ul li a {
+  text-decoration: none;
+  color: black;
+}
+main .secTwo .container .row .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+main .secTwo .container .row .card img {
   width: 100%;
+}
+main .secTwo .container .row .firstCon {
+  display: flex;
+  padding: 15px;
+  gap: 80px;
+}
+
+@media screen and (max-width: 576px) {
+  header .conHead .headRight {
+    display: none;
+  }
+  header .conHead nav {
+    display: none;
+  }
+  header .conHead i {
+    display: block;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  header .conHead .headRight {
+    display: none;
+  }
 }
